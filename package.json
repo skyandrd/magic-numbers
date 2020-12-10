@@ -1,0 +1,11 @@
+{
+    "name": "magic_numbers",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "test": "mocha"
+    },
+    "devDependencies": {
+        "mocha": "^8.2.1"
+    }
+}
