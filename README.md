@@ -5,6 +5,10 @@
 
 ## Lets check some magic numbers!
 
+For example, if you dont know, 11111111x11111111=12345678987654321 :)
+
+### Some magic numbers from programming languages
+
 [Wikipedia article link](https://en.wikipedia.org/wiki/Magic_number_(programming))
 
 	Description
