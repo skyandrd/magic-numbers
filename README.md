@@ -9,7 +9,7 @@ For example, if you dont know, 111111111*111111111=12345678987654321 :)
 
 ### Some magic numbers from programming 
 
-It so interesting, that total number of magig numbers in programming is [42](https://en.wikipedia.org/wiki/42_(number))
+It so interesting, that total number of magic numbers in programming is [42](https://en.wikipedia.org/wiki/42_(number))
 
 [Wikipedia article link](https://en.wikipedia.org/wiki/Magic_number_(programming))
 
