@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { composition } = require('./11111111x11111111');
+const { composition } = require('./12345678987654321');
 const { checkUniqueMagicNumbers } = require('./m');
 
 describe('11111111x11111111=12345678987654321n', () => {
