@@ -1,5 +1,8 @@
 # Magic numbers
 
+![Build Status](https://travis-ci.com/skyandrd/magic_numbers.svg?branch=main)
+
+
 ## Lets check some magic numbers!
 
 [Wikipedia article link](https://en.wikipedia.org/wiki/Magic_number_(programming))
