@@ -90,16 +90,16 @@ describe('data types limits', () => {
         assert.strictEqual(r, -128n);
         assert.strictEqual(r, ~(2n<<6n) + 1n);
 
-        r = -(getNumberPower(2, 31) - 1n)
+        r = -(getNumberPower(2, 31))
         assert.strictEqual(typeof r, 'bigint')
-        assert.strictEqual(r, -2147483647n);
-        assert.strictEqual(r, ~(2n<<30n)+2n);
-        assert.strictEqual(r.toString(), ((2<<30)+1).toString());
+        assert.strictEqual(r, -2147483648n);
+        assert.strictEqual(r, ~(2n<<30n)+1n);
+        assert.strictEqual(r.toString(), (2<<30).toString());
 
-        r = -(getNumberPower(2, 63) - 1n)
+        r = -(getNumberPower(2, 63))
         assert.strictEqual(typeof r, 'bigint')
-        assert.strictEqual(r.toString()+"n", "-9223372036854775807n");
-        assert.strictEqual(r, ~(2n<<62n) + 2n);
-        assert.strictEqual(r.toString(2), "-111111111111111111111111111111111111111111111111111111111111111");
+        assert.strictEqual(r.toString()+"n", "-9223372036854775808n");
+        assert.strictEqual(r, ~(2n<<62n) + 1n);
+        assert.strictEqual(r.toString(2), "-1000000000000000000000000000000000000000000000000000000000000000");
     });
 });
