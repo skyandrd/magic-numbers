@@ -7,13 +7,29 @@
 
 For example, if you dont know, 111111111*111111111=12345678987654321 :)
 
-### Some magic numbers from programming 
+## Some magic numbers from programming 
 
 It so interesting, that total number of magic numbers in programming is [42](https://en.wikipedia.org/wiki/42_(number))
 
 [Wikipedia article link](https://en.wikipedia.org/wiki/Magic_number_(programming))
 
-	Description
+## Data type limits
+|Decimal|Hex|Description|
+|--- |--- |--- |
+|18,446,744,073,709,551,615|FFFF FFFF FFFF FFFF|The maximum unsigned 64 bit value (2^64 − 1)|
+|9,223,372,036,854,775,807|7FFF FFFF FFFF FFFF|The maximum signed 64 bit value (2^63 − 1)|
+|4,294,967,295|FFFF FFFF|The maximum unsigned 32 bit value (2^32 − 1)|
+|2,147,483,647|7FFF FFFF|The maximum signed 32 bit value (2^31 − 1)|
+|65,535|FFFF|The maximum unsigned 16 bit value (2^16 − 1)|
+|32,767|7FFF|The maximum signed 16 bit value (2^15 − 1)|
+|255|FF|The maximum unsigned 8 bit value (2^8 − 1)|
+|127|7F|The maximum signed 8 bit value (2^7 − 1)|
+|−128|80|Minimum signed 8 bit value|
+|−32,768|8000|Minimum signed 16 bit value|
+|−2,147,483,648|8000 0000|Minimum signed 32 bit value|
+|−9,223,372,036,854,775,808|8000 0000 0000 0000|Minimum signed 64 bit value|
+
+## Debug values
 | Code                   |  Description                                   |
 | ---------------------- | --------------------------------------------- |
 |00008123|	Used in MS Visual C++. Deleted pointers are set to this value, so they throw an exception, when they are used after; it is a more recognizable alias for the zero address. It is activated with the Security Development Lifecycle (/sdl) option.[20]|

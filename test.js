@@ -1,5 +1,7 @@
 const assert = require('assert');
+const { type } = require('os');
 const { composition } = require('./12345678987654321');
+const { getNumberPower } = require('./npower');
 const { checkUniqueMagicNumbers } = require('./m');
 
 describe('11111111x11111111=12345678987654321n', () => {
@@ -22,5 +24,82 @@ describe('check unique Magic number (programming)', () => {
         );
         
         assert.notStrictEqual(r, undefined)
+    });
+});
+
+describe('data types limits', () => {
+    it('should return 18,446,744,073,709,551,615', () => {
+        const r = getNumberPower(2, 64) - 1n
+        assert.strictEqual(typeof r, 'bigint')
+        assert.strictEqual(r.toString()+"n", "18446744073709551615n");
+    });
+
+    it('should return 9,223,372,036,854,775,807', () => {
+        const r = getNumberPower(2, 63) - 1n
+        assert.strictEqual(typeof r, 'bigint')
+        assert.strictEqual(r.toString()+"n", "9223372036854775807n");
+    });
+
+    it('should return 4,294,967,295', () => {
+        const r = getNumberPower(2, 32) - 1n
+        assert.strictEqual(typeof r, 'bigint')
+        assert.strictEqual(r.toString()+"n", "4294967295n");
+    });
+
+    it('should return 2,147,483,647', () => {
+        const r = getNumberPower(2, 31) - 1n
+        assert.strictEqual(typeof r, 'bigint')
+        assert.strictEqual(r.toString()+"n", "2147483647n");
+    });
+
+    it('should return 65,535', () => {
+        const r = getNumberPower(2, 16) - 1n
+        assert.strictEqual(typeof r, 'bigint')
+        assert.strictEqual(r.toString()+"n", "65535n");
+    });
+
+    it('should return 32,767', () => {
+        const r = getNumberPower(2, 15) - 1n
+        assert.strictEqual(typeof r, 'bigint')
+        assert.strictEqual(r.toString()+"n", "32767n");
+    });
+
+    it('should return 255', () => {
+        const r = getNumberPower(2, 8) - 1n
+        assert.strictEqual(typeof r, 'bigint')
+        assert.strictEqual(r.toString()+"n", "255n");
+    });
+
+    it('should return 127', () => {
+        const r = getNumberPower(2, 7) - 1n
+        assert.strictEqual(typeof r, 'bigint')
+        assert.strictEqual(r.toString(), "127");
+    });
+
+    it('MAX_SAFE_INTEGER should return 2^53-1=9007199254740991', () => {
+        const r = getNumberPower(2, 53) - 1n
+        assert.strictEqual(typeof r, 'bigint')
+        assert.strictEqual(typeof Number.MAX_SAFE_INTEGER, 'number')
+        assert.strictEqual(r.toString(), "9007199254740991");
+        assert.strictEqual(r.toString(), Number.MAX_SAFE_INTEGER.toString());
+    });
+
+    it('test mimimum signed values', () => {
+        let r = -getNumberPower(2, 7)
+        assert.strictEqual(typeof r, 'bigint')
+        assert.strictEqual(r, -128n);
+        assert.strictEqual(r, ~(2n<<6n) + 1n);
+
+        r = -(getNumberPower(2, 31) - 1n)
+        assert.strictEqual(typeof r, 'bigint')
+        assert.strictEqual(r, -2147483647n);
+        assert.strictEqual(r, ~(2n<<30n)+2n);
+        assert.strictEqual(r.toString(), ((2<<30)+1).toString());
+
+        r = -(getNumberPower(2, 63) - 1n)
+        assert.strictEqual(typeof r, 'bigint')
+        assert.strictEqual(r.toString()+"n", "-9223372036854775807n");
+        assert.strictEqual(r, ~(2n<<62n) + 2n);
+        assert.strictEqual(r.toString(2), "-111111111111111111111111111111111111111111111111111111111111111");
     });
 });
