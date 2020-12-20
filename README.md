@@ -8,9 +8,6 @@
 For example, if you dont know, 111111111*111111111=12345678987654321 :)
 
 ## Some magic numbers from programming 
-
-It so interesting, that total number of magic numbers in programming is [42](https://en.wikipedia.org/wiki/42_(number))
-
 [Wikipedia article link](https://en.wikipedia.org/wiki/Magic_number_(programming))
 
 ## Data type limits
@@ -29,6 +26,7 @@ It so interesting, that total number of magic numbers in programming is [42](htt
 |−2,147,483,648|8000 0000|Minimum signed 32 bit value|
 |−9,223,372,036,854,775,808|8000 0000 0000 0000|Minimum signed 64 bit value|
 
+It so interesting, that total number of debug magic numbers in programming is [42](https://en.wikipedia.org/wiki/42_(number))
 ## Debug values
 | Code                   |  Description                                   |
 | ---------------------- | --------------------------------------------- |
