@@ -1,11 +1,12 @@
-![Build Status](https://travis-ci.com/skyandrd/magic_numbers.svg?branch=main)
 # About
 Lets check some magic numbers!
 
 For example, if you dont know, 111111111*111111111=12345678987654321 :)
 
-## Some magic numbers from programming 
+Some magic numbers from programming 
 [Wikipedia article link](https://en.wikipedia.org/wiki/Magic_number_(programming))
+
+![Build Status](https://travis-ci.com/skyandrd/magic_numbers.svg?branch=main)
 
 ## Data type limits
 |Decimal|Hex|Description|
