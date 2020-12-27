@@ -1,9 +1,6 @@
-# Magic numbers
-
 ![Build Status](https://travis-ci.com/skyandrd/magic_numbers.svg?branch=main)
-
-
-## Lets check some magic numbers!
+# About
+Lets check some magic numbers!
 
 For example, if you dont know, 111111111*111111111=12345678987654321 :)
 
