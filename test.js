@@ -1,6 +1,6 @@
 const assert = require('assert');
 const { type } = require('os');
-const { composition } = require('./12345678987654321');
+const { composition } = require('./composition');
 const { getNumberPower } = require('./npower');
 const { checkUniqueMagicNumbers } = require('./m');
 

@@ -4,9 +4,9 @@ Lets check some magic numbers!
 For example, if you dont know, 111111111*111111111=12345678987654321 :)
 
 Some magic numbers from programming 
-[Wikipedia article link](https://en.wikipedia.org/wiki/Magic_number_(programming))
+[Wikipedia article link](https://en.wikipedia.org/wiki/Magic_number_(programming)){:target="_blank"}
 
-![Build Status](https://travis-ci.com/skyandrd/magic_numbers.svg?branch=main)
+![Build Status](https://api.travis-ci.com/skyandrd/magic-numbers.svg?branch=main&status=passed){:target="_blank"}
 
 ## Data type limits
 |Decimal|Hex|Description|
