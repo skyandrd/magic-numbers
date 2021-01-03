@@ -7,6 +7,11 @@ Some magic numbers from programming
 [Wikipedia article link](https://en.wikipedia.org/wiki/Magic_number_(programming))
 
 ![Build Status](https://api.travis-ci.com/skyandrd/magic-numbers.svg?branch=main&status=passed)
+
+## Googol
+[Googol](https://en.wikipedia.org/wiki/Googol)
+A googol is the large number 10100. In decimal notation, it is written as the digit 1 followed by one hundred zeroes: 10,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000.
+
 ## Data type limits
 |Decimal|Hex|Description|
 |--- |--- |--- |
@@ -69,3 +74,4 @@ It so interesting, that total number of debug magic numbers in programming is [4
 |FEE1DEAD	|"Feel dead", Used by Linux reboot() syscall|
 |FEEDFACE	|"Feed face", Seen in PowerPC Mach-O binaries on Apple Inc.'s macOS platform. On Sun Microsystems' Solaris, marks the red zone (KMEM_REDZONE_PATTERN)Used by VLC player and some IP cameras in RTP/RTCP protocol, VLC player sends four bytes in the order of the endianness of the system. Some IP cameras expect the player to send this magic number and do not start the stream if it is not received.|
 |FEEEFEEE|	"Fee fee", Used by Microsoft's debug HeapFree() to mark freed heap memory. Some nearby internal bookkeeping values may have the high word set to FEEE as well.[23]|
+

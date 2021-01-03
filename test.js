@@ -103,3 +103,11 @@ describe('data types limits', () => {
         assert.strictEqual(r.toString(2), "-1000000000000000000000000000000000000000000000000000000000000000");
     });
 });
+
+describe('Googol', () => {
+    it('should return 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 1 with 100 zeros length', () => {
+        const r = getNumberPower(10, 100)
+        assert.strictEqual(typeof r, 'bigint')
+        assert.strictEqual(r.toString()+"n", "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000n");
+    });
+});
