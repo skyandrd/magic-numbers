@@ -10,7 +10,7 @@ Some magic numbers from programming
 
 ## Googol
 [Googol](https://en.wikipedia.org/wiki/Googol)
-A googol is the large number 10100. In decimal notation, it is written as the digit 1 followed by one hundred zeroes: 10,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000.
+A googol is the large number 10^100. In decimal notation, it is written as the digit 1 followed by one hundred zeroes: 10,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000,​000.
 
 ## Data type limits
 |Decimal|Hex|Description|
