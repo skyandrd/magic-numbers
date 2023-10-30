@@ -118,5 +118,6 @@ describe('after Googol', () => {
         const r = getNumberPower(10, 100) + BigInt(1)
         assert.strictEqual(typeof r, 'bigint')
         assert.strictEqual(r.toString(), "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001");
+        assert.strictEqual(r.toString().length, 101)
     });
 });
