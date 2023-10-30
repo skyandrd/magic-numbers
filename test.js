@@ -112,3 +112,12 @@ describe('Googol', () => {
         assert.strictEqual(r.toString().length, 101)
     });
 });
+
+describe('after Googol', () => {
+    it('should return 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 1 with 100 zeros length', () => {
+        const r = getNumberPower(10, 100) + BigInt(1)
+        assert.strictEqual(typeof r, 'bigint')
+        assert.strictEqual(r.toString(), "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001");
+        //assert.strictEqual(r.toString().length, 101)
+    });
+});
