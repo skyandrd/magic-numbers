@@ -1,8 +1,8 @@
 const assert = require('assert');
-const { type } = require('os');
 const { composition } = require('./composition');
 const { getNumberPower } = require('./npower');
 const { checkUniqueMagicNumbers } = require('./m');
+const { nicomachus } = require('./nicomachus');
 
 describe('11111111x11111111=12345678987654321n', () => {
     it('should return 12345678987654321n', () => {
@@ -114,10 +114,28 @@ describe('Googol', () => {
 });
 
 describe('after Googol', () => {
-    it('should return 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 1 with 100 zeros length', () => {
+    it('should return 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 1 with 99 zeros and 1 digit at the end', () => {
         const r = getNumberPower(10, 100) + BigInt(1)
         assert.strictEqual(typeof r, 'bigint')
         assert.strictEqual(r.toString(), "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001");
         assert.strictEqual(r.toString().length, 101)
     });
 });
+
+describe('Nicomachus', () => {
+    it('1^3 + 2^3 + 3^3 = (1+2+3)^2', () => {
+        [n3, n2] = nicomachus(3)
+        assert.strictEqual(n3, n2); 
+    })
+    it('1^3 + 2^3 + 3^3 + ... + n^3  = (1 + 2 + 3 + ... + n)^2', () => {
+        [n3, n2] = nicomachus(1000000)
+        assert.strictEqual(n3, n2); 
+    })
+});
+
+describe('2025', () => {
+    it('(20+25)^2', () => {
+        assert.strictEqual(Math.pow(20+25, 2), 2025); 
+    })
+});
+
