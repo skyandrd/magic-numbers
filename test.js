@@ -128,7 +128,7 @@ describe('Nicomachus', () => {
         assert.strictEqual(n3, n2); 
     })
     it('1^3 + 2^3 + 3^3 + ... + n^3  = (1 + 2 + 3 + ... + n)^2', () => {
-        [n3, n2] = nicomachus(1000000)
+        [n3, n2] = nicomachus(10000000)
         assert.strictEqual(n3, n2); 
     })
 });
