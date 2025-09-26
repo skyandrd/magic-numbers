@@ -14,10 +14,10 @@ A googol is the large number 10^100. In decimal notation, it is written as the d
 
 ## If you want, you can make a donation (I want to earn my first bitcoin :)
 BTC: 1HwMmhrRk5LrRse2M5daPFt3S4iR4pBKkf <br/>
-![screenshot](img/btc.jpg)
+![screenshot](img/btc1.png)
 
 TON: UQD4z5huYGwQaphtya1AKEFXfV5q8gE2b8nq1WnvT_1uhQWy <br/>
-![screenshot](img/ton.jpg)
+![screenshot](img/ton1.png)
 
 ## Data type limits
 |Decimal|Hex|Description|
